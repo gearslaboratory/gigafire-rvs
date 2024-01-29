@@ -11,11 +11,3 @@ RUN git clone https://github.com/gearslaboratory/gigafire-rvs.git
 RUN cd gigafire-rvs/newlib && make
 
 ENV PATH="/app/gigafire-rvs/newlib/build:$PATH"
-
-
-#RUN make RVS/librvs/
-
-#RUN /librvs(.exe) rvs_init
-
-
-
