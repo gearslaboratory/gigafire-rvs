@@ -10,14 +10,14 @@ dmpath:=DataManagement
 fuelpath:=Fuels
 buildpath:=build
 successionpath:=Succession
-
+disturbancepath:=Disturbance
 INCLUDES:=-I/usr/include/boost 
 
 ##########
 ## MAIN ##
 ##########
 
-sources := $(wildcard $(biopath)/*.cpp $(dmpath)/*.cpp $(fuelpath)/*.cpp $(successionpath)/*.cpp)
+sources := $(wildcard $(biopath)/*.cpp $(dmpath)/*.cpp $(fuelpath)/*.cpp $(successionpath)/*.cpp $(disturbancepath)/*.cpp)
 objects := $(patsubst %.cpp,%.o, $(sources))
 
 all: lib exe
